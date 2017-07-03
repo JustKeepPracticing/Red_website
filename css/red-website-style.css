@@ -1,0 +1,642 @@
+/******************************
+ ******************************
+ Here is how it's structured
+ 1. Fonts
+ 2.1 header
+ 2.2 menu
+ 2.3 header content
+ 3. content
+ 4. product-section
+ 5. staff-section
+ 6. footer
+ *******************************
+ *******************************/
+/*** fonts and font families ***/
+
+@font-face {
+    font-family: MuseoSans700;
+    src: url(../fonts/MuseoSansCyrl_700.woff)
+}
+
+@font-face {
+    font-family: MuseoSans300;
+    src: url(../fonts/MuseoSansCyrl_300.woff)
+}
+
+@font-face {
+    font-family: MuseoSans500;
+    src: url(../fonts/MuseoSansCyrl_500.woff)
+}
+
+@font-face {
+    font-family: MuseoSans900;
+    src: url(../fonts/MuseoSansCyrl_900.woff)
+}
+
+.main-content-headerline h1, .header .menu, .leftside-content p, .header-layer p, .header-layer a, .header-content a, .rightside-content span, .product-info p, .element-info p, .staff-headerline h1, .jason-info span:nth-of-type(1), .john-info span:nth-of-type(1), .address-line p, .copyright-line p, .email-info p, .email-info span:nth-of-type(2) {
+    font-family: MuseoSans500;
+}
+
+.header-content h1, .header-content p, .staff-headerline p, .jason-info p, .john-info p, .jason-info span:nth-of-type(2), .john-info span:nth-of-type(2) {
+    font-family: MuseoSans300;
+}
+/* all the header stuff comes here */
+
+.main-content p, .header-content h2, .leftside-content h3, .rightside-content h3, .element-info h3, .product-frame p, .social-buttons p, .email-signup p, .contact-us p:first-child {
+    font-family: MuseoSans700
+}
+
+/*** fonts and font families end ***/
+
+/*** .header stuff comes right here***/
+
+.header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    height: 1062px;
+}
+
+/*** menu comes here ***/
+
+.header .menu {
+    float: right;
+    font-size: 18px;
+    margin-right: 110px;
+    padding-top: 46px;
+    font-family: MuseoSans900;
+
+}
+
+.header .menu li a, .header-content h2, .header-content p, .header-content a, .header-layer a, .product-info .lorem, .product-info .ipsum, .name-info, .element-info p, .red-ellipse span {
+    color: #fff;
+}
+
+.header .menu li {
+    display: inline-block;
+    margin: 0 15px
+}
+
+.menu a {
+    text-decoration: none;
+}
+.header .menu a:hover {
+    color: #1A1A1A;
+    /*font-family: MuseoSans900;*/
+}
+
+/*** menu ends here ***/
+
+/*** header-content begins here ***/
+
+.header-content {
+    text-align: center;
+    padding-top: 395px;
+}
+
+.header-content h1 {
+    font-size: 74px;
+    color: #C19A99;
+}
+
+.header-content h2 {
+    font-size: 60px;
+    margin-top: 71px;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-top: 61px;
+    line-height: 48px;
+}
+
+.header-content a {
+    width: 274px;
+    height: 53px;
+    border-radius: 38px;
+    background-color: #1D1D1D;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 53px;
+}
+
+/*** header-content ends here ***/
+
+.header-layer {
+    height: 180px;
+    background-color: #1A1A1A;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BABABA;
+}
+
+.header-layer a {
+    display: inline-block;
+    height: 40px;
+    width: 211px;
+    background-color: #BF1C22;
+    text-decoration: none;
+    border-radius: 38px;
+    line-height: 40px;
+    margin-left: 116px;
+}
+
+/*** header ends here ***/
+
+/*** Content part begins here ***/
+
+.main-content {
+    max-width: 1251px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 163px;
+}
+
+.main-content-headerline {
+    text-align: center;
+    margin-bottom: 88px;
+}
+
+.main-content-headerline h1 {
+    font-size: 39px;
+    color: #414141;
+    margin-bottom: 25px;
+}
+
+.main-content-headerline h1 span {
+    font-weight: bold;
+}
+
+.main-content-headerline p {
+    text-align: center;
+    color: #5B5B5B;
+    font-size: 24px;
+}
+
+.leftside-content {
+    margin-top: 26px;
+    float: left;
+    width: 607px;
+}
+
+.leftside-content p {
+    margin-bottom: 326px;
+}
+
+.leftside-content h3, .rightside-content h3 {
+    color: #464646;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+.leftside-content h3 {
+    margin-top: 222px;
+}
+
+.leftside-content p, .rightside-content p {
+    color: #414242;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.rightside-content {
+    float: right;
+    width: 522px;
+    margin-top: 6px;
+}
+
+.rightside-content p:last-of-type {
+    margin-bottom: 59px;
+}
+.rightside-content span {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.rightside-content p+img {
+    margin-top: 390px;
+    margin-bottom: 180px;
+}
+
+.middle-block {
+    width: 40px;
+    height: 1103px;
+    position: relative;
+    float: left;
+}
+
+.straight-line {
+    display: inline-block;
+    height: 1103px;
+    background-color: #B7B7B7;
+    width: 1px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+.top-first-round, .middle-round, .bottom-round {
+    border: 2px solid #B7B7B7;
+    border-radius: 50%;
+    width: 37px;
+    height:37px;
+}
+
+.top-second-round, .middle-ellipse  {
+    background-color: #BF1C22;
+}
+.top-first-round {
+    display: inline-block;
+    background-position: 6px 6px;
+    position: relative;
+}
+
+.middle-ellipse {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.top-second-round, .middle-round, .bottom-round {
+    position: absolute;
+}
+
+.top-second-round {
+    width: 23px;
+    height: 23px;
+    top: 61px;
+    right: 9px;
+    border-radius: 50%;
+}
+
+.middle-round {
+    top: 539px;
+    background: #fff;
+}
+
+.bottom-round {
+    bottom: -74px;
+}
+
+/*** network icons part is here ***/
+
+.network-icons {
+    margin-top: 22px;
+}
+
+.network-icons img:nth-of-type(1), .network-icons img:nth-of-type(3) {
+    padding-right: 33px;
+}
+
+.network-icons img:nth-of-type(2) {
+    padding-right: 23px;
+}
+
+.network-icons img:nth-of-type(4) {
+    padding-right: 71px;
+}
+
+/*** network icons part is here ***/
+
+/*** Content part ends here ***/
+
+/*** here comes .product-section ***/
+
+.product-section {
+    background-image: url(../img/product-section-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 954px;
+}
+
+.all-section-stuff {
+    padding-top: 222px;
+    width: 1164px;
+    margin: 0 auto;
+}
+.product-info {
+    width: 730px;
+    float: left
+}
+
+
+.product-info h3 {
+    margin-bottom: 13px
+}
+
+.product-info .lorem, .product-info .ipsum {
+    font-size: 39px;
+}
+
+.product-info .lorem {
+    font-weight: bold;
+    font-family: MuseoSans900;
+    margin-right: 14px;
+
+}
+
+.product-info .ipsum {
+    font-family: MuseoSans500;
+}
+
+.name-info {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.167
+
+}
+
+.element-info {
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.element-info h3 {
+    display: inline-block;
+    font-size: 24px;
+    color: #1A1A1A;
+    margin-right: 39px;
+    margin-bottom: 25px;
+}
+
+.element-info p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.element-name {
+    float: left;
+}
+
+.line-with-ellipse {
+    width: 427px;
+    height: 1px;
+    background-color: white;
+    position: relative;
+    float: left;
+    top: 12px;
+
+}
+
+.red-ellipse {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #BF1C22;
+    display: inline-block;
+    position: absolute;
+    margin-top: -5px;
+    text-align: center;
+    line-height: 35px;
+    float: right;
+}
+
+.product-frame {
+    height: 416px;
+    width: 391px;
+    border-radius: 20px;
+    border: 2px dashed #BF4E55;
+    float: right;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 24px;
+
+}
+
+.product-frame p {
+    color: #fff;
+    line-height: 25px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* staff-section comes here*/
+
+.staff-section {
+    background-image: url(../img/background-layers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 824px;
+
+}
+
+.staff-stuff {
+    width: 1146px;
+    margin: auto;
+}
+
+.staff-headerline {
+    text-align: center;
+    margin-top: 127px;
+}
+
+.staff-headerline h1 {
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.staff-headerline span {
+    font-weight: bold;
+    /*font-family: MuseoSans900*/;
+}
+
+.staff-headerline p {
+    line-height: 38px;
+    font-size: 16px
+}
+
+.staff-photoes {
+    text-align: center;
+    margin-top: 101px;
+    margin-bottom: 152px;
+}
+
+.john {
+    background-image: url(../img/left-vector.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 194px;
+    height: 191px;
+    position: relative;
+}
+
+.john-info {
+    margin-top: 25px;
+}
+
+.jason-section, .john-section {
+    width: 414px;
+}
+
+.john-section {
+    float: left;
+}
+
+.jason {
+    background-image: url(../img/right-vector.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 198px;
+    height: 199px;
+    position: relative;
+
+}
+
+.jason-section {
+    float: right;
+}
+
+.jason span img:nth-of-type(2), .john span img:nth-of-type(2) {
+    display: none;
+}
+
+.jason span:hover img:nth-of-type(2), .john span:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.jason span:hover img:nth-of-type(1), .john span:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.jason-info {
+    margin-top: 17px;
+}
+
+.jason img, .john img {
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.jason img:nth-of-type(1):hover, .john img:nth-of-type(1):hover {
+    display: none;
+}
+
+.jason-info p, .john-info p {
+    margin-top: 32px
+}
+
+.jason-info, .john-info  {
+    line-height: 25px
+}
+
+.jason-info span:nth-of-type(1), .john-info span:nth-of-type(1) {
+    font-size: 26px
+}
+
+
+
+
+
+/* footer comes here */
+
+.footer {
+    background-color: #1A1A1A;
+    height: 381px;
+    color: #A9A8A8;
+}
+
+.footer-staff {
+    width: 1191px;
+    margin: 0 auto;
+    padding-top: 126px;
+}
+.email-signup, .social-buttons, .vertical-first-line, .vertical-second-line {
+    float: left;
+}
+
+.social-buttons p, .email-signup p {
+    font-size: 24px;
+}
+
+.contact-us {
+    float: right;
+    margin-right: -148px;
+}
+
+.contact-us > p {
+    font-size: 24px;
+}
+
+.contact-us p {
+    margin-bottom: 19px;
+    line-height: 28px;
+}
+
+.social-buttons p {
+    margin-bottom: 21px;
+    margin-left: 11px
+}
+
+.social-buttons img {
+    margin-left: 11px;
+}
+
+.vertical-first-line, .vertical-second-line {
+    width: 1px;
+    height: 88px;
+    background-color: #727272;
+
+}
+
+.vertical-first-line {
+    margin-left: 70px;
+    margin-right: 61px;
+}
+
+.vertical-second-line {
+    margin-left: 31px;
+    margin-right: 49px;
+}
+
+.email-signup input {
+    width: 325px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: #323232;
+    border: none;
+    padding-left: 15px;
+    color: #A9A9A9
+}
+
+.email-signup input:focus {
+    outline: none;
+}
+
+.email-signup p {
+    margin-bottom: 26px;
+}
+
+.email-info {
+    float: right;
+    margin-left: 382px;
+    line-height: 28px;
+    margin-top: -75px;
+}
+
+.email-info span:nth-of-type(2) {
+    color: #BE5458;
+    cursor: pointer;
+}
+
+.copyright-line {
+    text-align: right;
+    margin-right: 883px;
+    margin-top: 180px;
+
+}
